@@ -32,7 +32,7 @@ NODE_JWT_SECRET = "supersecretjwtkey"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pathnova-backend.onrender.com', 'localhost']
 
 
 # Application definition
