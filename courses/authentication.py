@@ -1,26 +1,29 @@
+# authentication.py
+
+from rest_framework.authentication import BaseAuthentication
+from rest_framework.exceptions import AuthenticationFailed
 import jwt
-from django.conf import settings
-from rest_framework import authentication, exceptions
-from django.contrib.auth.models import AnonymousUser
+import os
 
-class NodeJWTAuthentication(authentication.BaseAuthentication):
+SECRET_KEY = os.environ.get("JWT_SECRET", "supersecretjwtkey")  # must match Node's .env
+
+class NodeJWTAuthentication(BaseAuthentication):
     def authenticate(self, request):
-        auth_header = request.headers.get("Authorization")
-        if not auth_header or not auth_header.startswith("Bearer "):
-            return None  # no token provided
+        auth = request.headers.get("Authorization", "")
+        if not auth.startswith("Bearer "):
+            raise AuthenticationFailed("Token missing")
 
-        token = auth_header.split(" ")[1]
+        token = auth.split(" ")[1]
         try:
-            payload = jwt.decode(token, settings.NODE_JWT_SECRET, algorithms=["HS256"])
+            decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
         except jwt.ExpiredSignatureError:
-            raise exceptions.AuthenticationFailed("Token expired")
+            raise AuthenticationFailed("Token expired")
         except jwt.InvalidTokenError:
-            raise exceptions.AuthenticationFailed("Invalid token")
+            raise AuthenticationFailed("Invalid token")
 
-        # Since the user is from MongoDB/Node and not Django's User model:
-        user = AnonymousUser()
-        user.email = payload.get("email", None)
-        user.id = payload.get("id", None)
-        user.role = payload.get("role", None)
+        email = decoded.get("email")
+        if not email:
+            raise AuthenticationFailed("Token missing email")
 
+        user = type("User", (), {"email": email})
         return (user, token)
