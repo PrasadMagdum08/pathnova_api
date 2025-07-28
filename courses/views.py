@@ -10,6 +10,7 @@ def refine_skills_with_llm(goals, specialization):
     Replace this with actual GenAI model calls later.
     """
     combined_context = f"{specialization.lower()} {' '.join(goals).lower()}"
+
     if "ai" in combined_context or "ml" in combined_context:
         skills = [
             "machine learning", "data structures", "python", "neural networks",
@@ -21,6 +22,8 @@ def refine_skills_with_llm(goals, specialization):
         skills = ["system design", "node.js", "databases", "api design"]
     else:
         skills = goals
+
+
     # Prioritize user-specified goals
     ranked_skills = sorted(skills, key=lambda x: (x not in goals, x))
     return skills, ranked_skills
@@ -46,7 +49,7 @@ class CourseRecommendationView(APIView):
         print("Goals:", goals)
         print("Max Duration:", max_duration)
 
-        # 🔮 LLM refinement logic
+        # LLM refinement logic
         skills, ranked_skills = refine_skills_with_llm(goals, specialization)
         print("Refined skills:", skills)
         print("Ranked skills:", ranked_skills)

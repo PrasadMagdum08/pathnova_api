@@ -1,0 +1,35 @@
+[
+    {
+        "topic": "Adversarial Attacks on Named Entity Recognition Models",
+        "description": "This topic focuses on developing and evaluating attacks specifically designed to manipulate the performance of Named Entity Recognition (NER) models. The goal is to identify vulnerabilities in these models and propose countermeasures to improve their robustness. This research can have applications in natural language processing and cybersecurity, as NER models are widely used in various domains, including text classification, information retrieval, and sentiment analysis. Students will need to have a strong understanding of machine learning, NLP, and cybersecurity principles.",
+        "skills": [
+            "Machine learning",
+            "NLP",
+            "Cybersecurity",
+            "Python"
+        ],
+        "relevance": "This topic is highly relevant to the current research trends in NLP and cybersecurity, as adversarial attacks are becoming increasingly common and NER models are widely used in various applications."
+    },
+    {
+        "topic": "Anomaly Detection in Text Data using Graph-Based Methods",
+        "description": "This topic involves developing graph-based methods for anomaly detection in text data. The goal is to identify unusual patterns or anomalies in text data that may indicate malicious activities, such as spam or phishing emails. Students will need to have a strong understanding of graph theory, machine learning, and NLP principles. This research can have applications in cybersecurity, fraud detection, and network intrusion detection.",
+        "skills": [
+            "Graph theory",
+            "Machine learning",
+            "NLP",
+            "Python"
+        ],
+        "relevance": "This topic is highly relevant to the current research trends in NLP and cybersecurity, as graph-based methods are increasingly being used for anomaly detection and text analysis."
+    },
+    {
+        "topic": "Generative Adversarial Networks for Forgery Detection in Digital Documents",
+        "description": "This topic involves developing Generative Adversarial Networks (GANs) for forgery detection in digital documents. The goal is to train a GAN to generate realistic forgeries of digital documents and then develop a detection model to identify the forgeries. Students will need to have a strong understanding of machine learning, NLP, and cybersecurity principles. This research can have applications in digital forensics, cybersecurity, and document verification.",
+        "skills": [
+            "Machine learning",
+            "NLP",
+            "Cybersecurity",
+            "Python"
+        ],
+        "relevance": "This topic is highly relevant to the current research trends in NLP and cybersecurity, as GANs are increasingly being used for image and document forgery detection and digital forensics."
+    }
+]

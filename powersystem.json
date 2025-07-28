@@ -1,0 +1,26 @@
+[
+    {
+        "topic": "Bi-directional DC-DC Converters for Hybrid Energy Storage Systems",
+        "description": "This research focuses on the design and development of bi-directional DC-DC converters for hybrid energy storage systems, which combine different energy storage technologies such as batteries, supercapacitors, and flywheels. The converter should be able to efficiently transfer power between the different energy storage components, enabling optimal energy management and grid support. The project involves theoretical modeling, simulation, and experimental evaluation of the converter's performance. The research can contribute to the development of more efficient and sustainable energy storage systems, which are crucial for the integration of renewable energy sources into the grid.",
+        "skills": [
+            "Power electronics, circuit analysis, simulation, experimental techniques"
+        ],
+        "relevance": "The development of hybrid energy storage systems is a rapidly growing area of research, driven by the need for more efficient and sustainable energy storage solutions."
+    },
+    {
+        "topic": "Fault-tolerant Control of Electric Vehicles using Model Predictive Control",
+        "description": "This research aims to develop a fault-tolerant control strategy for electric vehicles using model predictive control (MPC). The strategy should be able to adapt to different types of faults, such as motor failures, battery degradation, and sensor faults, and optimize the vehicle's performance in real-time. The project involves developing a dynamic model of the electric vehicle, designing the MPC controller, and testing the strategy using simulations and experiments. The research can contribute to the development of more reliable and efficient electric vehicles, which are critical for reducing greenhouse gas emissions and improving air quality.",
+        "skills": [
+            "Power electronics, control systems, model predictive control, simulation, experimental techniques"
+        ],
+        "relevance": "The development of fault-tolerant control strategies for electric vehicles is a key area of research, driven by the need for more reliable and efficient electric vehicles."
+    },
+    {
+        "topic": "High-Temperature Power Electronics for Electric Aircraft Applications",
+        "description": "This research focuses on the design and development of high-temperature power electronics for electric aircraft applications. The power electronics devices should be able to operate at high temperatures, typically above 150\u00b0C, to enable the efficient and reliable operation of electric motors and other aircraft systems. The project involves theoretical modeling, simulation, and experimental evaluation of the power electronics devices' performance. The research can contribute to the development of more efficient and reliable electric aircraft systems, which are critical for reducing emissions and improving air traffic management.",
+        "skills": [
+            "Power electronics, thermal management, simulation, experimental techniques"
+        ],
+        "relevance": "The development of high-temperature power electronics is a rapidly growing area of research, driven by the need for more efficient and reliable electric aircraft systems."
+    }
+]

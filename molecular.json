@@ -1,0 +1,32 @@
+[
+    {
+        "topic": "CRISPR-Cas13 mediated RNA-targeted regulation of gene expression",
+        "description": "CRISPR-Cas13 system has emerged as a promising tool for targeted regulation of gene expression by degrading specific RNA molecules. This project aims to explore the applicability of this system in different biological contexts, such as regulating gene expression in stem cells or cancer cells, and investigate its potential therapeutic applications. The work involves designing and delivering CRISPR-Cas13 guides, testing their efficacy in vitro and in vivo, and exploring the system's potential limitations and off-target effects.",
+        "skills": [
+            "Molecular biology techniques",
+            "RNA sequencing",
+            "Bioinformatics"
+        ],
+        "relevance": "This project contributes to the ongoing research in the field of RNA-targeted therapeutics and gene regulation, and has potential applications in various diseases"
+    },
+    {
+        "topic": "Single-cell RNA-seq analysis of gene regulation in immune cells",
+        "description": "Single-cell RNA sequencing has enabled the study of gene regulation at the single-cell level. This project aims to explore the regulation of gene expression in immune cells, such as T cells and macrophages, using single-cell RNA-seq data. The work involves analyzing large-scale datasets, identifying key regulators of gene expression, and investigating the relationships between gene regulation and cell function.",
+        "skills": [
+            "Bioinformatics",
+            "Single-cell RNA-seq analysis",
+            "Statistical analysis"
+        ],
+        "relevance": "This project contributes to the understanding of gene regulation in immune cells, which has implications for the development of immunotherapies and vaccine design"
+    },
+    {
+        "topic": "Designing and testing of novel RNA-binding protein-RNA interactions",
+        "description": "RNA-binding proteins (RBPs) play crucial roles in regulating gene expression by binding to specific RNA sequences. This project aims to design and test novel RBP-RNA interactions using computational tools and biochemical assays. The work involves predicting RBP-RNA binding sites, designing and synthesizing RNA aptamers, and investigating the functional consequences of these interactions on gene regulation.",
+        "skills": [
+            "Bioinformatics",
+            "RNA design",
+            "Biochemical assays"
+        ],
+        "relevance": "This project contributes to the understanding of RBP-RNA interactions, which has implications for the development of RNA-based therapies and gene regulation"
+    }
+]
